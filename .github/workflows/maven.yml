@@ -1,4 +1,4 @@
-Put this in maven.yml
+```yaml
 name: Maven Build
 
 on:
@@ -32,3 +32,4 @@ jobs:
 
       - name: Verify generated JAR
         run: ls -l target/
+```
