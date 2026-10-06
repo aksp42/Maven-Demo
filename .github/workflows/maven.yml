@@ -1,22 +1,19 @@
-```yaml
+
 name: Maven Build
 
 on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout source code
         uses: actions/checkout@v4
 
@@ -32,4 +29,3 @@ jobs:
 
       - name: Verify generated JAR
         run: ls -l target/
-```
